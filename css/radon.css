@@ -187,10 +187,12 @@ footer p {
         /*background: rgba(255,255,255,0.9);*/
         background: black;/*#C7DFF1;/*Color if big screen..*/
     }
-
+    .nav>li{
+      padding-left:50px;/*spaces between links in the nav bar*/
+    }
     .nav>li>a {
         /*padding: 35px;*/
-    	padding: 30px;/*adjust the height of navigation bar*/
+    	/*padding: 30px;/*adjust the height of navigation bar when it is not scroll to the top, it is big, the heigh of the nav bar*/
     }
 
     .navbar-nav>li>a {
@@ -204,6 +206,9 @@ footer p {
         table-layout: fixed;
         font-size: 1.25em;
     }
+   
+
+    
     
    
 }
@@ -215,9 +220,15 @@ footer p {
         clear: both;
     }
 }
+
 #navbar-main{
   background-color: #7FB3D5;/*small or big screen when not scrolling the color*/
-}  
+  text-align:center;
+  /*height:100px;*/
+  padding-top:15px;
+  padding-bottom:15px;
+}
+
 
 #navbar-main.affixed-top{/*no use*/
     background:green;
@@ -230,6 +241,15 @@ footer p {
     left:0;
     right:0;
     width:100%;
+    height:50px;
+    text-align:center;
+    padding-top:3px;
+    
+    text-transform: uppercase;
+    font-weight: 200;
+    color: black;
+    letter-spacing: 2px;
+ 10 10 10 10;
     z-index:999;/*overlay over carousel images..whatever..*/
   }
 
